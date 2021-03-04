@@ -1,0 +1,12 @@
+name: WarenPlugin
+main: fr.volax.warenplugin.PluginMain
+version: 1.0
+api-version: 1.13
+description: Plugin Minecraft pour Waren
+author: Volax
+website: https://github.com/VolaxYT
+commands:
+  start-event:
+    description: Activer l'event
+  stop-event:
+    description: Désactiver l'event
