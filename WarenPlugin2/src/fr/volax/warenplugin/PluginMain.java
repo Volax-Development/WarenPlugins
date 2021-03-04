@@ -37,6 +37,6 @@ public class PluginMain extends JavaPlugin implements Listener {
     public void onCraft(CraftItemEvent event) {
         if (event.getWhoClicked() instanceof Player)
             if (isActivate)
-                event.getWhoClicked().addPotionEffect(new PotionEffect(PotionEffectType.getById(new Random().nextInt(32) + 1), (new Random().nextInt(getConfig().getInt("temps-maximum") - getConfig().getInt("temps-minimum") + 1) + getConfig().getInt("temps-minimum")) * 20, 1));
+                event.getWhoClicked().addPotionEffect(new PotionEffect(PotionEffectType.getById(new Random().nextInt(32) + 1), (new Random().nextInt(getConfig().getInt("temps-maximum") - getConfig().getInt("temps-minimum") + 1) + getConfig().getInt("temps-minimum")) * 20, 0));
     }
 }
